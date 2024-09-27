@@ -2,6 +2,4 @@ streamlit
 plotly
 pandas
 statsmodels
-seaborn 
-sklearn
-
+scikit-learn
