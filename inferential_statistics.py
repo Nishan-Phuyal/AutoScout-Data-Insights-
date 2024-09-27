@@ -88,7 +88,7 @@ def dummy_ols():
 def Hierarchical_regression():
         """interative Hierarchical Regression """
         with st.form("Hierarchical regression"):
-            with st.popover("Hierarchical_regression"):
+            with st.popover("Hierarchical regression"):
 
                 select_regressand = st.multiselect("Price is default selection", options=["price_in_euro"],default=["price_in_euro"], placeholder= "Regressand cannot be changed")
 
