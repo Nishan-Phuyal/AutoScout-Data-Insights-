@@ -73,7 +73,7 @@ def input_data():
         'mile_per_year': Driven_KM_Per_Year,
         'per_liter_km': [Km_per_liter]
     })
-    predict = st.button("Predicted Price")
+    predict = st.button("Predict Price")
     st.divider
     try:
         if predict:
