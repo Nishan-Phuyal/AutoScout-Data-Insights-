@@ -49,7 +49,7 @@ def dummy_ols():
 
                 select_qualitative_regressors_ = st.multiselect("Select the Dummies.", options= ["brand","model","transmission_type","fuel_type"], placeholder= "please select the dummy variable/s (Optional)")
 
-                st.form_submit_button(':blue[Run Pooled Regression]')
+                st.form_submit_button(':blue[Run  Regression]')
 
                 # create a dataframe with selected features
                 df_ols = pd.get_dummies(df[[i for i in (select_quantitative_regressors + select_qualitative_regressors_ + select_regressand)]] ,columns=[i for i in select_qualitative_regressors_], drop_first=True, dtype=int)
@@ -100,7 +100,7 @@ def Hierarchical_regression():
                 subcategories = st.selectbox("Select the subcategory.", options= df[category].unique().tolist(), index=0)
             
 
-                st.form_submit_button(':blue[Run Pooled Regression]')
+                st.form_submit_button(':blue[Run Regression]')
           
             info_message = (f"##### Showing results for {subcategories}")
             st.info(info_message)
