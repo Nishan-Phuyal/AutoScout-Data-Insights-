@@ -3,3 +3,4 @@ plotly
 pandas
 statsmodels
 scikit-learn
+xgboost
